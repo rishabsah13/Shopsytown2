@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import colors from 'colors'
+
 
 const connectDB = async () => {
     try {
@@ -7,7 +7,7 @@ const connectDB = async () => {
         console.log(`connected to mongodb ${conn.connection.host}`)
     }
     catch (error) {
-        console.log('error in mongodb'.bgRed.white)
+        console.log('error in mongodb')
     }
 }
 
